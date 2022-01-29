@@ -1,16 +1,17 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import Home from "./components/home"
+import Home from "./pages/home"
 import Header from "./layout/header"
+import Footer from "./layout/footer"
 
 function App() {
-  const day = 10
   const { t } = useTranslation()
 
   return (
-    <div className="App">
+    <div className="App-container">
       <Header t={t} />
       <Home t={t} />
+      <Footer t={t} />
     </div>
   )
 }
