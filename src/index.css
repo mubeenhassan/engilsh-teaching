@@ -1,6 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
+.App-container {
+  width: 100%;
+}
+
+/* -------------------- header--------------------- */
+.header-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-container ul {
+  display: flex;
+}
+
+.nav-container ul li {
+  list-style: none;
+  font-size: 20px;
+  line-height: 23.48px;
+  padding-right: 24px;
+  font-weight: 700;
+}
+
+.nav-container ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.current,
+.nav-container ul li a:hover {
+  color: #fa0909;
+  text-decoration: underline;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container img {
+  width: 59.42px;
+  height: 47px;
+}
+
+.lang-container {
+  display: flex;
+  align-items: center;
+}
+
+.lang-container .flag-icon {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.lang-flag-btn {
+  display: flex;
+}
+
+.header-bg {
+  background: #b5acac;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.mobile-menu {
+  width: 40px;
+  z-index: 11;
+  display: none;
+}
+
+.nav-options {
+  padding-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  list-style-type: none;
+}
+/* ///////////////////////// */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn svg {
+  width: 16px;
+  margin-left: 12px;
+}
+
+/* -----------------------home ---------------- */
+
+.home {
+  margin-top: 70px;
+}
+
+.contact-us-container {
+  width: 514px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  box-shadow: 5px 4px 70px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 50px;
+  margin-bottom: -116px;
+  margin-right: -45px;
+}
+
+.contact-us-container input {
+  width: 100%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144.4%;
+  text-align: left;
+  color: #000000;
+  outline: none;
+  opacity: 0.8;
+  border: none;
+  border-bottom: 0.5px solid #000000;
+  margin-bottom: 50px;
+}
+
+.button-container button {
+  width: 100%;
+  height: 66.93px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 144.4%;
+  color: #ffffff;
+  background: #e95959;
+}
+
+.home-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 48px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.contact-us-container p {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+}
+
+.home-text {
+  text-align: right;
+}
+
+.home-text-date {
+  color: white;
+}
+
+.home-text h2,
+.home-text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0;
+  line-height: 144.4%;
+}
+
+.home-text h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 144.4%;
+  color: #000000;
+  margin: 0;
+  text-align: end;
+}
+
+.home-val-text {
+  color: #ff3b49;
+}
+
+.pos-rel {
+  position: relative;
+  padding: 110px 136px;
+}
+
+.whats-app {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  transform: translate(0, 0);
+  width: 150px;
+  height: 150px;
+}
+
+/* second text section */
+
+.section-between-text {
+  padding: 30px 78px;
+}
+
+.section-between-text span {
+  white-space: nowrap;
+  font-size: 30px;
+}
+
+.section-between-text p {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* learn english throught football */
+
+.text-image-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-side {
+  width: 50%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 827px;
+}
+
+.text-side {
+  width: 50%;
+  padding: 0 60px;
+}
+
+.text-side h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.text-side p {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: justify;
+  font-weight: 500;
+  margin: auto;
+}
+
+.text-side a {
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* .....................slider............. */
+.slick-slider {
+  width: 90%;
+  margin: auto;
+}
+
+/* football tour */
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 302px;
+  background: #000000;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative !important;
+}
+
+.barcodes {
+  width: 150px;
+  height: 150px;
+  position: absolute !important;
+  top: 30%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  padding-inline-start: 0;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.social-link li a svg {
+  width: 100%;
+  fill: white;
+}
+
+.social-link li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 10px;
+  list-style-type: none;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  margin-top: 3.22rem;
+  padding-inline-start: 0;
+}
+
+.social-item li {
+  margin: 0px 14px;
+}
+
+.social-item li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer-hori {
+  width: 80%;
+  height: 2px;
+  border: 0 none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.44);
+}
+
+.footer span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 144.4%;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+/* second page */
+
+.btn {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #e95959;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.learn-english .text-side {
+  background-color: #aad9fe;
+}
+
+.football-coach p,
+.summer-camp p,
+.learn-english p {
+  color: #ff3939;
+}
+
+.football-coach h2,
+.summer-camp h2,
+.learn-english h2 {
+  color: #e95959;
+}
+
+.football-tour {
+  flex-direction: row-reverse;
+}
+
+.football-tour .text-side {
+  background: #5eca7ede;
+}
+
+.summer-camp .text-side {
+  background-color: #aad9fe;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    margin-top: 60px;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    top: -178px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+
+  .nav-options.active {
+    background: #dfdbdb;
+    top: 60px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lang-container {
+    justify-content: center;
+  }
+
+  .text-side {
+    padding: 0 40px;
+  }
+
+  .text-side h2 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .text-side p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .text-side a {
+    font-size: 24px;
+  }
+
+  .whats-app {
+    bottom: 0;
+    top: unset;
+    left: 50%;
+    -ms-transform: translate(0, 0);
+    transform: translate(-50%, 0);
+  }
+
+  .section-between-text {
+    padding: 150px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    align-items: center;
+    padding: 40px 0;
+  }
+  .home-text {
+    text-align: center;
+  }
+
+  .text-side p {
+    padding: 0 26px;
+  }
+
+  .home-text h2,
+  .home-text span {
+    font-size: 40px;
+  }
+
+  .contact-us-container {
+    max-width: 400px;
+    margin-right: unset;
+  }
+  .home-text h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .social-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .social-item li {
+    margin: 0px;
+    padding: 8px 0px;
+  }
+
+  .text-image-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-side,
+  .text-side {
+    width: 100%;
+    padding: 14px 0px;
+    text-align: center;
+  }
+
+  .text-side a {
+    line-height: 48px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .text-side {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .image-side {
+    padding: 0px;
+  }
+  .courses {
+    padding: 30px !important;
+  }
+  .courses .text-content span {
+    font-size: 30px;
+    padding-bottom: 16px;
+  }
+  .courses .text-content {
+    flex-direction: column;
+  }
+
+  .barcodes {
+    position: unset !important;
+    margin-top: 16px;
+    transform: unset;
+  }
+}
