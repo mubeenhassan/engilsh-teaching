@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 
 
-function Button({ t }) {
+function Button({ t, buttonText }) {
  
   return (
     <div className="button-container">
        <button>
-           Send your details and we will contact you.
+          {buttonText}
        </button>
     </div>
   )

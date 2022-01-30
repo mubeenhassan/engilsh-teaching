@@ -468,8 +468,50 @@ body {
   color: #e95959;
 }
 
+.online-english,
 .football-tour {
   flex-direction: row-reverse;
+}
+
+.online-english .text-side {
+  background: #5eca7e;
+}
+
+.online-english .text-side h1 {
+  font-size: 4.2rem;
+}
+
+.online-english .text-side p {
+  font-weight: bold;
+}
+
+.online-english .text-side button {
+  width: 350px;
+  height: 73px;
+  background: #e95959;
+  border: none;
+  border-radius: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-top: 100px;
+}
+
+.contactus-now {
+  position: relative;
+}
+
+.contactus-now .button-container {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contactus-now .button-container button {
+  font-size: 30px;
+  padding: 12px 70px;
+  white-space: nowrap;
 }
 
 .football-tour .text-side {
@@ -479,6 +521,129 @@ body {
 .summer-camp .text-side {
   background-color: #aad9fe;
 }
+
+.why-choose-us {
+  background: #f7f9fb;
+  width: 100%;
+}
+
+.why-choose-us h1 {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.why-choose-us h1 span {
+  margin: 0 12px;
+}
+
+.why-choose-us h1 hr {
+  width: 35px;
+  height: 3px;
+  background: green;
+}
+
+.advantage-contaner {
+  width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.advantage {
+  max-width: 350px;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 13px;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.advantage img {
+  width: 70px;
+  height: 70px;
+}
+
+.start-game{
+  text-align: center;
+  padding: 16px 6px;
+}
+
+.start-game h1{
+  padding: 38px 12px;
+}
+
+.game-step-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.step-item{
+  width: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 14px;
+  box-sizing: border-box;
+  margin: 14px;
+}
+
+
+.step-circl{
+  width: 100px;
+  height: 100px;
+  background: #E95959;
+  border-radius: 50%;
+  display: flex;
+  border: solid pink 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-circl span{
+  color: white;
+font-size: 28px;
+font-weight: 500;
+text-align: center;
+}
+
+.step-damo{
+  width: 132px;
+  height: 132px;
+  background: #FFDCDC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-item h2{
+  line-height: 48px;
+}
+
+.step-item p{
+  line-height: 24px;
+}
+
+.choose-content{
+  width: 100%;
+}
+
+.choose-content img{
+  width: 100%;
+  max-width: 100%;
+}
+
+
 
 @media screen and (max-width: 992px) {
   .home {
