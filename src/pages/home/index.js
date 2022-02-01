@@ -1,7 +1,7 @@
 import React from "react"
 import HomeSection from "../../components/languages/sections/homeSection"
 import TextImageContainer from "../../components/languages/sections/textImageContainer"
-import Testimonials from '../../components/slider/testimonials'
+import Testimonials from "../../components/slider/testimonials"
 
 import whatsapp from "../../statics/images/whatsapp.png"
 import learnByFootball from "../../statics/images/learn-through-football.png"

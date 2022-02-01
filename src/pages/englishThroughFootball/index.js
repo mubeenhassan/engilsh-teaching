@@ -5,8 +5,6 @@ import Steps from "../../components/languages/sections/steps"
 
 
 import learnByFootball from "../../statics/images/learn-through-football.png"
-import footBallTour from "../../statics/images/football-tour.png"
-import camp from "../../statics/images/camp.png"
 import onlineEnglish from '../../statics/images/online-english.png'
 import contact2 from '../../statics/images/contact2.png'
 

@@ -190,7 +190,7 @@ body {
   color: #ffffff;
   background: #e95959;
 }
-
+.ground-section,
 .home-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,6 +200,60 @@ body {
   flex-direction: column;
   align-items: end;
   position: relative;
+}
+
+.ground-section {
+  height: 700px;
+  position: relative;
+}
+
+.text-white {
+  color: white;
+}
+
+.advantage-new span {
+  background: #e95959;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.advantage-new {
+  max-width: 220px;
+  box-sizing: border-box;
+  padding: 13px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.advantage-new span img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-red {
+  background: #e95959 !important;
+}
+
+.ground-section .ground-text {
+  background: #ece8e866;
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
 }
 
 .contact-us-container p {
@@ -456,6 +510,34 @@ body {
   background-color: #aad9fe;
 }
 
+.eperimental-trip .text-side,
+.football-trip .text-side {
+  text-align: center;
+  background-color: #aad9fe;
+}
+
+.eperimental-trip .text-side {
+  background-color: #aad9fe;
+  padding: 170px 100px;
+}
+
+.football-trip .text-side p {
+  color: #e95959;
+  text-align: center;
+}
+
+.text-red {
+  color: #e95959;
+}
+
+.top-level,
+.football-team {
+  background: #e95959;
+}
+
+.football-team .text-side {
+  padding: 123px 90px;
+}
 .football-coach p,
 .summer-camp p,
 .learn-english p {
@@ -514,6 +596,7 @@ body {
   white-space: nowrap;
 }
 
+.about-us-page .text-side,
 .football-tour .text-side {
   background: #5eca7ede;
 }
@@ -546,10 +629,10 @@ body {
 
 .advantage-contaner {
   width: 90%;
-    margin: auto;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 
 .advantage {
@@ -570,23 +653,78 @@ body {
   height: 70px;
 }
 
-.start-game{
+.start-game {
   text-align: center;
   padding: 16px 6px;
 }
 
-.start-game h1{
+.start-game h1 {
   padding: 38px 12px;
 }
 
-.game-step-container{
+.game-step-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.step-item{
+.summer-camp-page .text-side {
+  background: #72d08f;
+  text-align: center;
+}
+
+.summer-camp-page .text-side p {
+  text-align: center;
+}
+
+.summer-camp-page .text-side h2 span {
+  color: #e95959;
+  font-size: 60px;
+}
+
+.section-between-text .button-container {
+  display: flex;
+  width: 100%;
+}
+
+.section-between-text .button-container button {
+  margin: auto;
+  width: 500px;
+  border-radius: 16px;
+}
+
+.summer-camp-page .text-side p {
+  color: #e95959;
+}
+
+.top-level {
+  flex-direction: row-reverse;
+}
+
+.top-level .text-side p {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  padding: 68px;
+  text-align: left;
+}
+
+.about-us-page .text-side h2 {
+  text-align: center;
+}
+
+.contact-us-heading {
+  width: fit-content;
+  margin: auto;
+  margin-top: 43px;
+  font-size: 47px;
+}
+
+.about-us-page-container .contact-us-container {
+  margin: 40px auto;
+}
+.step-item {
   width: 282px;
   display: flex;
   flex-direction: column;
@@ -597,11 +735,10 @@ body {
   margin: 14px;
 }
 
-
-.step-circl{
+.step-circl {
   width: 100px;
   height: 100px;
-  background: #E95959;
+  background: #e95959;
   border-radius: 50%;
   display: flex;
   border: solid pink 13px;
@@ -609,41 +746,39 @@ body {
   justify-content: center;
 }
 
-.step-circl span{
+.step-circl span {
   color: white;
-font-size: 28px;
-font-weight: 500;
-text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.step-damo{
+.step-damo {
   width: 132px;
   height: 132px;
-  background: #FFDCDC;
+  background: #ffdcdc;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.step-item h2{
+.step-item h2 {
   line-height: 48px;
 }
 
-.step-item p{
+.step-item p {
   line-height: 24px;
 }
 
-.choose-content{
+.choose-content {
   width: 100%;
 }
 
-.choose-content img{
+.choose-content img {
   width: 100%;
   max-width: 100%;
 }
-
-
 
 @media screen and (max-width: 992px) {
   .home {

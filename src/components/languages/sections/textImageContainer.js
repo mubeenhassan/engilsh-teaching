@@ -5,19 +5,30 @@ function TextImageContainer({
   t,
   image,
   textPortion,
+  textPortion2,
   className,
   image2,
   button,
 }) {
   return (
     <div class={`text-image-container ${className}`}>
-      <div class="image-side">
-        <img src={image} alt="" />
-      </div>
+      {image && (
+        <div class="image-side">
+          <img src={image} alt="" />
+        </div>
+      )}
+
       {image2 && (
         <div class="image-side">
           <img src={image2} alt="" />
         </div>
+      )}
+
+      {textPortion2 && (
+        <div
+          class="text-side bg-red"
+          dangerouslySetInnerHTML={{ __html: t(textPortion2) }}
+        />
       )}
 
       {textPortion && (
