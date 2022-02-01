@@ -3,6 +3,8 @@ import LanguageSelector from "../../components/languages"
 import logo from "../../statics/images/logo.png"
 import { ThreeBars } from "@styled-icons/octicons/ThreeBars"
 import { WindowClose } from "@styled-icons/fa-solid/WindowClose"
+import { Link } from "react-router-dom"
+
 
 const NAN_ITEM = [
   {
@@ -42,7 +44,7 @@ function Header({ t }) {
           <ul >
             {NAN_ITEM.map(({ menu, href }, key) => (
               <li key={key} >
-                <a href={href} >{t(menu)}</a>
+                <Link to={href} >{t(menu)}</Link>
               </li>
             ))}
           </ul>

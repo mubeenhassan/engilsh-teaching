@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import Home from "./pages/home"
 import Header from "./layout/header"
