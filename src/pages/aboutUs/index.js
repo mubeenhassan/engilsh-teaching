@@ -1,6 +1,8 @@
 import React from "react"
 import TextImageContainer from "../../components/languages/sections/textImageContainer"
+import ContactUsForm from "../../components/forms/contacusForm"
 
+import camp from '../../statics/images/camp.png'
 function AboutUs({ t }) {
   return (
     <div className="home about-us-page-container">
