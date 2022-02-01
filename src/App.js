@@ -1,5 +1,7 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
+import { BrowserRouter, Route, Routes, Switch } from "react-router-dom"
+
 import Home from "./pages/home"
 import Header from "./layout/header"
 import Footer from "./layout/footer"
@@ -12,15 +14,17 @@ function App() {
   const { t } = useTranslation()
 
   return (
-    <div className="App-container">
+    <BrowserRouter>
       <Header t={t} />
-      {/* <EnglishThroughFootball t={t} /> */}
-      {/* <FootballTour t={t} /> */}
-      {/* <SummperCamp t={t} /> */}
-      <AboutUs t={t} />
-      {/* <Home t={t} /> */}
+      <Routes>
+        <Route path="/" element={<Home t={t} />} />
+        <Route path="/learn" element={<EnglishThroughFootball t={t} />} />
+        <Route path="/tour" element={<FootballTour t={t} />} />
+        <Route path="/summer-camp" element={<SummperCamp t={t} />} />
+        <Route path="/about" element={<AboutUs t={t} />} />
+      </Routes>
       <Footer t={t} />
-    </div>
+    </BrowserRouter>
   )
 }
 

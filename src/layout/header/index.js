@@ -11,19 +11,19 @@ const NAN_ITEM = [
   },
   {
     menu: "english_through_football",
-    href: "/",
+    href: "learn",
   },
   {
     menu: "football_tours",
-    href: "/",
+    href: "tour",
   },
   {
     menu: "summer_camps",
-    href: "/",
+    href: "summer-camp",
   },
   {
     menu: "about_us",
-    href: "/",
+    href: "about",
   },
 ]
 
