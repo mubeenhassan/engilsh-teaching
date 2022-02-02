@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../../../layout/buttons"
+import Button from "../../layout/buttons"
 
 function TextImageContainer({
   t,

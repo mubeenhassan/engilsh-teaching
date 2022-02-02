@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import LanguageSelector from "../../components/languages"
 import logo from "../../statics/images/logo.png"
 import { ThreeBars } from "@styled-icons/octicons/ThreeBars"
@@ -31,11 +31,25 @@ const NAN_ITEM = [
 
 function Header({ t }) {
   const [toggle, setToggle] = useState(false)
+  const [navbar, setNavbar] = useState(false)
+
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >0) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  })
 
   const handleToggle = () => setToggle(!toggle)
-
   return (
-    <div className="header-bg">
+    <div className={`header-bg ${navbar ? 'grey': ''}`}>
       <div className="header-container">
         <div className="logo-container">
           <img src={logo} alt={t("logo")} />
@@ -43,7 +57,7 @@ function Header({ t }) {
         <div className={toggle ? 'nav-options active nav-container' : 'nav-container nav-options'} >
           <ul >
             {NAN_ITEM.map(({ menu, href }, key) => (
-              <li key={key} >
+              <li key={key} onClick={(()=>setToggle(false))}>
                 <Link to={href} >{t(menu)}</Link>
               </li>
             ))}

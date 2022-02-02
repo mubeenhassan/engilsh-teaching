@@ -30,7 +30,7 @@ body {
 
 .nav-container ul li {
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 23.48px;
   padding-right: 24px;
   font-weight: 700;
@@ -71,13 +71,19 @@ body {
 }
 
 .header-bg {
-  background: #b5acac;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
 }
 
+.grey {
+  background: #B5ACAC6E;
+}
+
+.hero {
+  height: 100vh;
+}
 .mobile-menu {
   width: 40px;
   z-index: 11;
@@ -147,7 +153,7 @@ body {
 /* -----------------------home ---------------- */
 
 .home {
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .contact-us-container {
@@ -220,7 +226,7 @@ body {
 }
 
 .advantage-new {
-  max-width: 220px;
+  width: 260px;
   box-sizing: border-box;
   padding: 13px;
   display: -ms-flexbox;
@@ -238,6 +244,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
 }
 
 .bg-red {
@@ -301,12 +309,16 @@ body {
 }
 
 .whats-app {
-  position: absolute;
-  top: 75px;
+  position: fixed;
+  top: 50%;
   right: 0;
+  z-index: 1;
   transform: translate(0, 0);
-  width: 150px;
-  height: 150px;
+}
+
+.whats-app img{
+  width: 120px;
+  height: 120px;
 }
 
 /* second text section */
@@ -317,7 +329,6 @@ body {
 
 .section-between-text span {
   white-space: nowrap;
-  font-size: 30px;
 }
 
 .section-between-text p {
@@ -358,21 +369,27 @@ body {
 
 .text-side {
   width: 50%;
-  padding: 0 60px;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: normal;
+  box-sizing: border-box;
 }
 
 .text-side h2 {
   font-size: 40px;
   font-weight: 700;
+  margin-top: 12px 0;
   line-height: 60px;
 }
 
 .text-side p {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 40px;
   text-align: justify;
   font-weight: 500;
-  margin: auto;
+  margin: 12px 0;
 }
 
 .text-side a {
@@ -381,6 +398,7 @@ body {
   font-weight: 800;
   font-size: 30px;
   cursor: pointer;
+  margin: 12px 0;
 }
 
 /* .....................slider............. */
@@ -467,6 +485,14 @@ body {
   color: #ffffff;
 }
 
+.social-item li a:hover {
+  color: grey;
+}
+
+.social-link li a svg:hover {
+  fill: grey;
+}
+
 .footer-hori {
   width: 80%;
   height: 2px;
@@ -510,15 +536,18 @@ body {
   background-color: #aad9fe;
 }
 
-.eperimental-trip .text-side,
+.experimental-trip .text-side,
 .football-trip .text-side {
-  text-align: center;
+  text-align: left;
   background-color: #aad9fe;
 }
 
-.eperimental-trip .text-side {
+.experimental-trip .text-side h3 {
+  font-size: 3.5rem;
+}
+
+.experimental-trip .text-side {
   background-color: #aad9fe;
-  padding: 170px 100px;
 }
 
 .football-trip .text-side p {
@@ -533,6 +562,7 @@ body {
 .top-level,
 .football-team {
   background: #e95959;
+  flex-direction: row-reverse;
 }
 
 .football-team .text-side {
@@ -648,6 +678,10 @@ body {
   text-align: center;
 }
 
+.advantage:hover {
+  background: #5ECA7F;;
+}
+
 .advantage img {
   width: 70px;
   height: 70px;
@@ -690,8 +724,10 @@ body {
 
 .section-between-text .button-container button {
   margin: auto;
-  width: 500px;
-  border-radius: 16px;
+  width: fit-content;
+  border-radius: 10px;
+  height: unset;
+  padding: 16px 48px;
 }
 
 .summer-camp-page .text-side p {
@@ -782,7 +818,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .home {
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
 
   .toggle-menu {
@@ -842,13 +878,13 @@ body {
     font-size: 24px;
   }
 
-  .whats-app {
+  /* .whats-app {
     bottom: 0;
     top: unset;
     left: 50%;
     -ms-transform: translate(0, 0);
     transform: translate(-50%, 0);
-  }
+  } */
 
   .section-between-text {
     padding: 150px 40px;

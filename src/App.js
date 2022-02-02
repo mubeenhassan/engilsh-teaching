@@ -1,6 +1,7 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import ScrollToTop from './components/ScrollToTop'
 
 import Home from "./pages/home"
 import Header from "./layout/header"
@@ -15,7 +16,9 @@ function App() {
 
   return (
     <BrowserRouter>
+    
       <Header t={t} />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home t={t} />} />
         <Route path="/learn" element={<EnglishThroughFootball t={t} />} />

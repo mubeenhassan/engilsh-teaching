@@ -9,10 +9,15 @@ const languages = [
     countery_code: "gb",
   },
   {
-    code: "fr",
-    name: "French",
-    countery_code: "fr",
+    code: "es",
+    name: "Spanish",
+    countery_code: "es",
   },
+  {
+    code: "cn",
+    name: "Chinese",
+    countery_code: "cn",
+  }
 ]
 
 function LanguageSelector() {

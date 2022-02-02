@@ -1,10 +1,10 @@
 import React from "react"
-import TextImageContainer from "../../components/languages/sections/textImageContainer"
-import InCludedInTour from "../../components/languages/sections/includedInTour"
+import TextImageContainer from "../../components/sections/textImageContainer"
+import InCludedInTour from "../../components/sections/includedInTour"
 
 import footballGround from "../../statics/images/football-ground.png"
 import footballTeam from "../../statics/images/football-team.png"
-import Ground from "../../components/languages/sections/ground"
+import Ground from "../../components/sections/ground"
 
 function FootballTour({ t }) {
   return (
@@ -12,7 +12,7 @@ function FootballTour({ t }) {
       <TextImageContainer
         t={t}
         image={footballGround}
-        className="football-trip"
+        className="hero football-trip"
         textPortion="oganizing_trip"
       />
       <div class="section-between-text">
@@ -33,11 +33,13 @@ function FootballTour({ t }) {
           and the <span className="text-red"> UK</span>
         </p>
       </div>
+      <div className="ground-slider">
       <Ground t={t} />
+      </div>
       <InCludedInTour t={t} />
       <TextImageContainer
         t={t}
-        className="eperimental-trip"
+        className="experimental-trip"
         textPortion="experimental_trip"
         textPortion2="experimental_trip2"
       />

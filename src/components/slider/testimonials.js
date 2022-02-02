@@ -1,21 +1,29 @@
 import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
-import images from "../../statics/images/camp.png"
+import chou from "../../statics/images/chou.jpg"
+import nian from "../../statics/images/nian.jpg"
+import maria from "../../statics/images/maria.jpg"
 import { QuoteRight } from "@styled-icons/boxicons-solid/QuoteRight"
 
 const REVIEWS = [
   {
-    name: "mubeen",
-    label: "freelance",
-    desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: images,
+    name: "MO CHOU",
+    label: "Beijing",
+    desc: "Ben is a fantastic teacher. You can see his passion for football and English in his classes. They are always fun, dynamic, and engaging.",
+    image: chou,
   },
   {
-    name: "Asad",
-    label: "freelance",
-    desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: images,
+    name: "NIAN ZHEN",
+    label: "Hangzhou",
+    desc: "Carlos is an excellent coach and teacher. He does everything with passion and energy. My children have been studying with him for 5 years, and I have seen an incredible improvement in their confidence and ability with English.",
+    image: nian,
+  },
+  {
+    name: "MARIA",
+    label: "Shanghai",
+    desc: "Ben is a fantastic teacher. You can see his passion for football and English in his classes. They are always fun, dynamic, and engaging.",
+    image: maria,
   },
 ]
 
@@ -29,7 +37,7 @@ const Testimonials = () => {
         showThumbs={false}
         showStatus={false}
         autoPlay={true}
-        interval={6100}
+        interval={3000}
       >
         {REVIEWS.map((item) => (
           <div>

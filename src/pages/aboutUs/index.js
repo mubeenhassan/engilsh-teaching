@@ -1,5 +1,5 @@
 import React from "react"
-import TextImageContainer from "../../components/languages/sections/textImageContainer"
+import TextImageContainer from "../../components/sections/textImageContainer"
 import ContactUsForm from "../../components/forms/contacusForm"
 
 import camp from '../../statics/images/camp.png'
@@ -9,7 +9,7 @@ function AboutUs({ t }) {
       <TextImageContainer
         t={t}
         image={camp}
-        className="about-us-page"
+        className="hero about-us-page"
         textPortion="about_us_text"
       />
       <h1 className="contact-us-heading">Contact us</h1>

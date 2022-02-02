@@ -1,7 +1,7 @@
 import React from "react"
-import TextImageContainer from "../../components/languages/sections/textImageContainer"
-import WhyChooseUs from "../../components/languages/sections/whyChooseUs"
-import Steps from "../../components/languages/sections/steps"
+import TextImageContainer from "../../components/sections/textImageContainer"
+import WhyChooseUs from "../../components/sections/whyChooseUs"
+import Steps from "../../components/sections/steps"
 
 
 import learnByFootball from "../../statics/images/learn-through-football.png"
@@ -14,7 +14,7 @@ function EnglishThroughFootball({ t }) {
        <TextImageContainer
         t={t}
         image={onlineEnglish}
-        className="online-english"
+        className="hero online-english"
         textPortion="online_english_text"
       />
       <div class="section-between-text">

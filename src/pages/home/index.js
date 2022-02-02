@@ -1,6 +1,6 @@
 import React from "react"
-import HomeSection from "../../components/languages/sections/homeSection"
-import TextImageContainer from "../../components/languages/sections/textImageContainer"
+import HomeSection from "../../components/sections/homeSection"
+import TextImageContainer from "../../components/sections/textImageContainer"
 import Testimonials from "../../components/slider/testimonials"
 
 import whatsapp from "../../statics/images/whatsapp.png"
@@ -18,9 +18,12 @@ function Home({ t }) {
           spark conversations between strangers, create communities and unite
           nationalities
         </p>
-        <div className="whats-app">
+        <a href="https://wa.me/+34 640 30 63 62" target="_blank">
+          <div className="whats-app">
           <img src={whatsapp} />
         </div>
+        </a>
+        
       </div>
       <TextImageContainer
         t={t}
