@@ -1,12 +1,12 @@
 import React from "react"
-import includeIcon1 from "../../../statics/images/icons/include-icon-1.png"
-import includeIcon2 from "../../../statics/images/icons/include-icon-2.png"
-import includeIcon3 from "../../../statics/images/icons/include-icon-3.png"
-import includeIcon4 from "../../../statics/images/icons/include-icon-4.png"
-import includeIcon5 from "../../../statics/images/icons/include-icon-5.png"
-import includeIcon6 from "../../../statics/images/icons/include-icon-6.png"
-import includeIcon7 from "../../../statics/images/icons/include-icon-7.png"
-import includeIcon8 from "../../../statics/images/icons/include-icon-8.png"
+import includeIcon1 from "../../statics/images/icons/include-icon-1.png"
+import includeIcon2 from "../../statics/images/icons/include-icon-2.png"
+import includeIcon3 from "../../statics/images/icons/include-icon-3.png"
+import includeIcon4 from "../../statics/images/icons/include-icon-4.png"
+import includeIcon5 from "../../statics/images/icons/include-icon-5.png"
+import includeIcon6 from "../../statics/images/icons/include-icon-6.png"
+import includeIcon7 from "../../statics/images/icons/include-icon-7.png"
+import includeIcon8 from "../../statics/images/icons/include-icon-8.png"
 
 const ADVANTAGE = [
   {

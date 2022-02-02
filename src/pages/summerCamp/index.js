@@ -1,5 +1,5 @@
 import React from "react"
-import TextImageContainer from "../../components/languages/sections/textImageContainer"
+import TextImageContainer from "../../components/sections/textImageContainer"
 import Testimonials from "../../components/slider/testimonials"
 import footallTour from "../../statics/images/football-tour.png"
 import Seeimg from "../../statics/images/see-img.png"
@@ -12,7 +12,7 @@ function SummerCamp({ t }) {
       <TextImageContainer
         t={t}
         image={camp}
-        className="summer-camp-page"
+        className="hero summer-camp-page"
         textPortion="summper_camp_page_text"
       />
       <div class="section-between-text">
