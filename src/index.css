@@ -41,9 +41,10 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
-.current,
+
+.current a,
 .nav-container ul li a:hover {
-  color: #fa0909;
+  color: #fa0909 !important;
   text-decoration: underline;
 }
 
@@ -109,10 +110,10 @@ body {
   line-height: 19px;
 }
 
-.dropbtn:hover,
+/* .dropbtn:hover,
 .dropbtn:focus {
   background-color: #2980b9;
-}
+} */
 
 .dropdown {
   position: relative;
@@ -219,8 +220,8 @@ body {
 
 .advantage-new span {
   background: #e95959;
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   position: relative;
 }
@@ -244,8 +245,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
 }
 
 .bg-red {
@@ -311,14 +312,14 @@ body {
 .whats-app {
   position: fixed;
   top: 50%;
-  right: 0;
+  right: 12px;
   z-index: 1;
   transform: translate(0, 0);
 }
 
 .whats-app img{
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
 }
 
 /* second text section */
@@ -364,7 +365,6 @@ body {
 
 .image-side img {
   width: 100%;
-  max-width: 827px;
 }
 
 .text-side {
@@ -379,6 +379,7 @@ body {
 
 .text-side h2 {
   font-size: 40px;
+  text-align: center;
   font-weight: 700;
   margin-top: 12px 0;
   line-height: 60px;
@@ -425,12 +426,16 @@ body {
 }
 
 .barcodes {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
   position: absolute !important;
   top: 30%;
   right: 0;
   transform: translate(-50%, -50%);
+}
+
+.barcodes img{
+  width: 100%;
 }
 
 .social-link {
@@ -536,8 +541,8 @@ body {
   background-color: #aad9fe;
 }
 
-.experimental-trip .text-side,
-.football-trip .text-side {
+.experimental-trip,
+.football-trip  {
   text-align: left;
   background-color: #aad9fe;
 }
@@ -585,12 +590,18 @@ body {
   flex-direction: row-reverse;
 }
 
-.online-english .text-side {
+
+.online-english {
   background: #5eca7e;
 }
 
 .online-english .text-side h1 {
   font-size: 4.2rem;
+}
+
+.online-english .image-side img {
+  height: fit-content;
+  align-self: flex-end;
 }
 
 .online-english .text-side p {
@@ -626,7 +637,7 @@ body {
   white-space: nowrap;
 }
 
-.about-us-page .text-side,
+.about-us-page,
 .football-tour .text-side {
   background: #5eca7ede;
 }
@@ -703,8 +714,11 @@ body {
   flex-wrap: wrap;
 }
 
+.summer-camp-page {
+ background: #72d08f;
+}
+
 .summer-camp-page .text-side {
-  background: #72d08f;
   text-align: center;
 }
 
@@ -835,16 +849,17 @@ body {
     height: fit-content;
     position: absolute;
     left: 0;
-    top: -178px;
+    top: -400px;
     opacity: 0;
     transition: all 0.5s ease;
     flex-direction: column;
     list-style-type: none;
     grid-gap: 0px;
+    padding-left: 0;
   }
 
   .nav-options.active {
-    background: #dfdbdb;
+    background: #c1eafc;;
     top: 60px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -855,7 +870,14 @@ body {
   .nav-container ul {
     flex-direction: column;
     text-align: center;
+    padding-inline-start: 0px;
   }
+
+  .nav-container ul li {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+
   .lang-container {
     justify-content: center;
   }
@@ -895,9 +917,30 @@ body {
   .home-section {
     align-items: center;
     padding: 40px 0;
+    justify-content: center;
   }
   .home-text {
     text-align: center;
+  }
+
+  .hero {
+    height: unset;
+  }
+
+  .hero .home-text,
+  .hero .text-side {
+    margin-top: 100px;
+  }
+
+  .experimental-trip .text-side,
+  .football-trip .text-side {
+    text-align: center;
+    padding: 150px 40px;
+  }
+
+  .whats-app img{
+    width: 70px;
+    height: 70px;
   }
 
   .text-side p {
@@ -955,6 +998,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    padding: 0 66px;
+    align-items: center;
   }
 
   .image-side {

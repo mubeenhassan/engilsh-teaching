@@ -24,6 +24,7 @@
  width: 100%;
  margin-left: auto;
  margin-right: auto;
+ margin-bottom: 10%;
  padding-top: 6%;
  padding-bottom: 8%;
  padding-left: 5%;
@@ -72,7 +73,6 @@
  font-size: 15px;
  font-family: sans-serif;
  text-align: center;
- max-height: 67px;
 }
 
 
@@ -130,6 +130,12 @@
    padding-right: 5%;
    height: 269px;
  }
-
-
 }
+
+@media screen and (max-with:768px) {
+  .myCarousel {
+    margin: 40px auto;
+    height: unset;
+  }
+ 
+} 
