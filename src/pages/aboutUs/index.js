@@ -2,13 +2,13 @@ import React from "react"
 import TextImageContainer from "../../components/sections/textImageContainer"
 import ContactUsForm from "../../components/forms/contacusForm"
 
-import camp from '../../statics/images/camp.png'
+import player from '../../statics/images/player.png'
 function AboutUs({ t }) {
   return (
     <div className="home about-us-page-container">
       <TextImageContainer
         t={t}
-        image={camp}
+        image={player}
         className="hero about-us-page"
         textPortion="about_us_text"
       />

@@ -18,11 +18,6 @@ function Home({ t }) {
           spark conversations between strangers, create communities and unite
           nationalities
         </p>
-        <a href="https://wa.me/+34 640 30 63 62" target="_blank">
-          <div className="whats-app">
-          <img src={whatsapp} />
-        </div>
-        </a>
         
       </div>
       <TextImageContainer

@@ -22,7 +22,7 @@ const REVIEWS = [
   {
     name: "MARIA",
     label: "Shanghai",
-    desc: "Ben is a fantastic teacher. You can see his passion for football and English in his classes. They are always fun, dynamic, and engaging.",
+    desc: "Joely always goes over and above, with so much interest in her students. She tries to make us get the most we possibly can from the course. If I had to rate her from 0-10, I would give her a 10. Excellent!",
     image: maria,
   },
 ]
