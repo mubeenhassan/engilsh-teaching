@@ -166,7 +166,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 35px 50px;
+  padding: 35px 35px;
   margin-bottom: -116px;
   margin-right: -45px;
 }
@@ -306,7 +306,7 @@ body {
 
 .pos-rel {
   position: relative;
-  padding: 110px 136px;
+  padding: 110px 136px !important;
 }
 
 .whats-app {
@@ -436,6 +436,27 @@ body {
 
 .barcodes img{
   width: 100%;
+}
+
+.home-hero {
+  width: 100%;
+  position: relative;
+}
+
+.home-hero .carousel-root {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.home-hero .contact-us-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-20%, 5%);
+}
+
+.home-whats {
+  margin-top: 100px;
 }
 
 .social-link {
@@ -927,6 +948,17 @@ body {
     height: unset;
   }
 
+  .home-hero .contact-us-container {
+    margin: auto;
+    position: unset;
+    transform: unset;
+    margin-top: 60px;
+  }
+
+  .home-whats {
+    margin-top: -70px;
+  }
+
   .hero .home-text,
   .hero .text-side {
     margin-top: 100px;
@@ -1020,5 +1052,27 @@ body {
     position: unset !important;
     margin-top: 16px;
     transform: unset;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .home-whats {
+    padding: 20px !important;
+  }
+  .contact-us-container {
+    width: 90%;
+  }
+  .home-whats p {
+    font-size: 30px;
+  }
+
+  .text-side {
+    padding: 0 20px;
+  }
+  .text-side p {
+    padding: 0;
+  }
+  .section-between-text span {
+    white-space: unset;
   }
 }

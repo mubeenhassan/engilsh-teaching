@@ -4,7 +4,7 @@ import InCludedInTour from "../../components/sections/includedInTour"
 
 import footballGround from "../../statics/images/football-ground.png"
 import footballTeam from "../../statics/images/football-team.png"
-import Ground from "../../components/sections/ground"
+import ImageSlider from "../../components/slider/imageSlider"
 
 function FootballTour({ t }) {
   return (
@@ -34,7 +34,7 @@ function FootballTour({ t }) {
         </p>
       </div>
       <div className="ground-slider">
-      <Ground t={t} />
+      <ImageSlider t={t} />
       </div>
       <InCludedInTour t={t} />
       <TextImageContainer
