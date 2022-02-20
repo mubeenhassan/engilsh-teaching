@@ -12,7 +12,7 @@ function AboutUs({ t }) {
         className="hero about-us-page"
         textPortion="about_us_text"
       />
-      <h1 className="contact-us-heading">Contact us</h1>
+      <h1 className="contact-us-heading">Contact me</h1>
       <ContactUsForm
         t={t}
         heading="contact_us"
