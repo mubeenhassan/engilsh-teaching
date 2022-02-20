@@ -14,7 +14,7 @@ function Home({ t }) {
       <HomeSection t={t} Hero />
       <div class="section-between-text pos-rel home-whats">
         <p>
-          English and urdu together are the two complementary keys that
+          English and football together are the two complementary keys that
           spark conversations between strangers, create communities and unite
           nationalities
 
