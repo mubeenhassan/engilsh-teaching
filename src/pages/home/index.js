@@ -16,7 +16,7 @@ function Home({ t }) {
         <p>
           English and Football together are the two complementary keys that
           spark conversations between strangers, create communities and unite
-          nationalities
+          hello
 
         </p>
       </div>
