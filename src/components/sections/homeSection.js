@@ -10,7 +10,7 @@ function HomeSection({ t }) {
       <ContactUsForm 
       t={t}
       heading="reserve_your_space_now" 
-      buttonText="Send your details and we will contact you."
+      buttonText="Send your details"
       />
 
 
